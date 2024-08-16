@@ -39,7 +39,7 @@ import { useState } from "react"
      onChange={(e)=>setUsername(e.target.value)} 
     />)
     :(
-    <span>{user.username}</span>
+    <span>{user.id}.{user.username}</span>
 )
      }
     </div>

@@ -40,7 +40,8 @@ export default function Users(){
             setCounter((currentCounter)=>currentCounter+1)
             setUsers((currentUsersState)=>[...currentUsersState,newUser])
             setUsername('')
-            setEmail('') 
+            setEmail('')
+ 
         }}>
         <div>
             <label htmlFor="username"  >Username</label>
