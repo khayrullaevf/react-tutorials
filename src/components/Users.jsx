@@ -32,8 +32,6 @@ export default function Users(){
     <div>
       <form onSubmit={(e)=>{
             e.preventDefault()
-            console.log(username,email);
-
             const newUser={
                 id:counter,
                 username,
@@ -42,8 +40,7 @@ export default function Users(){
             setCounter((currentCounter)=>currentCounter+1)
             setUsers((currentUsersState)=>[...currentUsersState,newUser])
             setUsername('')
-            setEmail('')
-            
+            setEmail('') 
         }}>
         <div>
             <label htmlFor="username"  >Username</label>
